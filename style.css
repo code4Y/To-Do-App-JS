@@ -10,6 +10,7 @@
   min-height: 100vh;
   background: linear-gradient(135deg, #153677, #4e085f);
   padding: 10px;
+  position: relative;
 }
 
 .todo-app {
@@ -107,4 +108,19 @@ ul li span {
 
 ul li span:hover {
   background: #edeef0;
+}
+
+#notificationBox {
+  position: absolute;
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  width: 250px;
+  left: 50%;
+  margin-left: -125px;
+  top: 20px;
+}
+
+.hidden {
+  visibility: hidden;
 }

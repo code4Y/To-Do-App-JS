@@ -1,9 +1,13 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+const notification = document.getElementById("notificationBox");
 
 function addTask() {
   if(inputBox.value === "") {
-    alert("You must write something!");
+    notification.classList.remove("hidden")
+    setTimeout(() => {
+      notification.classList.add("hidden");
+    }, 2000);
   }
   else {
     let li = document.createElement("li");
